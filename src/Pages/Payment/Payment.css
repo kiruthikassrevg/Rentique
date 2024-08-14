@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.paymentForm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #000000 50%, #3b3838d1 50%);
+}
+
+.paymentForm-container form {
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  background: linear-gradient(
+    rgba(255, 254, 254, 0.755),
+    rgba(255, 251, 251, 0.9)
+  );
+}
+
+.paymentForm-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.paymentForm-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.paymentForm-title {
+  font-size: 22px;
+  color: #333;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.paymentForm-inputBox {
+  margin: 15px 0;
+}
+
+.paymentForm-inputBox span {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+  color: #000000;
+}
+
+.paymentForm-inputBox input {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: lowercase;
+  color: #000;
+}
+
+.paymentForm-inputBox input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.2);
+}
+
+.paymentForm-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.paymentForm-card-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.paymentForm-submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #000;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background .3s ease;
+}
+
+.paymentForm-submit-btn:hover {
+  background: #D4AF37;
+}
+
+.paymentForm-error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .paymentForm-col {
+    flex: 1 1 100%;
+  }
+}

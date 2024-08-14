@@ -1,0 +1,89 @@
+/* Scoped Styles for SellWithUs Component */
+
+.sellwithus-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .sellwithus-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sellwithus-card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  .sellwithus-card-body {
+    padding: 20px;
+  }
+  
+  .sellwithus-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .sellwithus-form-label {
+    font-weight: bold;
+  }
+  
+  .sellwithus-required-field::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .sellwithus-form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .sellwithus-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .sellwithus-btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .sellwithus-btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+  
+  .sellwithus-alert-danger {
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+  }
+  
+  .sellwithus-alert-danger.show {
+    display: block;
+  }
+  
+  .sellwithus-padding30px {
+    padding: 30px;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .sellwithus-container {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    .sellwithus-container {
+      padding: 1.5rem;
+    }
+  }
+  

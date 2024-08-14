@@ -1,0 +1,235 @@
+.product-page {
+  display: flex;
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  
+  
+}
+
+.product-gallery {
+  width: 50%;
+  text-align: center;
+}
+
+.main-image {
+  width: 500px; 
+  height: 700px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  border: 1px solid #ddd;
+
+
+}
+
+.thumbnail-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-details {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px; 
+  max-height: 700px; 
+  
+  overflow-y: auto; 
+}
+
+.product-details h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1em;
+  color: #555;
+}
+
+.pricing, .security, .size-info, .rental-info, .description {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pricing {
+  font-size: 1.2em;
+}
+
+.rental-price {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.retail-price {
+  
+  color: #999;
+  font-size: 0.9em;
+}
+
+.security, .size-info, .rental-info {
+  margin-bottom: 10px;
+}
+
+.size-info h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.size-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.size-button {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.size-button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.size-button.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+.rental-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rental-date label, .rental-days label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.rental-date input, .rental-days select {
+  width: 97%;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 2px;
+}
+
+.rent-now {
+  background-color: #2f302f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+  width:200px;
+  
+}
+
+.rent-now:hover {
+  background-color: #a2a4a2;
+}
+
+.rent-now:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 174, 76, 0.5);
+}
+
+.note {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 15px;
+}
+
+.check-size {
+  margin-top: 10px;
+}
+
+.check-size a {
+  text-decoration: underline;
+  color: #58595a;
+  cursor: pointer;
+}
+
+.check-size a:hover {
+  color: #0056b3;
+}
+/* Size chart modal styles */
+.size-chart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.size-chart-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
