@@ -137,31 +137,38 @@ function Home() {
         </center>
       </div>
       <br></br>
-      <div className='home-third'>
-        <center>
-          <h1>Categories</h1>
-          <div className='category-row'>
-            <div className='category-col'>
-              <Link to="/bridesmaid"><img src={bridesmaid} alt="bridesmaid category"></img></Link>
-              <div className='centerd'>
-              <Link to="/bridesmaid" className='catt-link'>Bridesmaid</Link>
-              </div>
-            </div>
-            <div className='category-col'>
-            <Link to="/groomsmen"><img src={groomsmen} alt="groomsmen category"></img></Link>
-              <div className='centerd'>
-              <Link to="/groomsmen" className='catt-link'>Groomsmen</Link>
-              </div>
-            </div>
-            <div className='category-col'>
-            <Link to="/exclusives"><img src={exclusives} alt="exclusive category"></img></Link>
-              <div className='centerd'>
-              <Link to="/exclusives" className='catt-link'>Exclusives</Link>
-              </div>
-            </div>
-          </div>
-        </center>
+      <div className='home-section'>
+  <center>
+    <h1>Categories</h1>
+    <div className='category-wrapper'>
+      <div className='category-item'>
+        <Link to="/bridesmaid">
+          <img src={bridesmaid} alt="bridesmaid category" />
+        </Link>
+        <div className='overlay'>
+          <Link to="/bridesmaid" className='category-link'>Bridesmaid</Link>
+        </div>
       </div>
+      <div className='category-item'>
+        <Link to="/groomsmen">
+          <img src={groomsmen} alt="groomsmen category" />
+        </Link>
+        <div className='overlay'>
+          <Link to="/groomsmen" className='category-link'>Groomsmen</Link>
+        </div>
+      </div>
+      <div className='category-item'>
+        <Link to="/exclusives">
+          <img src={exclusives} alt="exclusive category" />
+        </Link>
+        <div className='overlay'>
+          <Link to="/exclusives" className='category-link'>Exclusives</Link>
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
+
 
       <div className="home-fourth">
         <center>

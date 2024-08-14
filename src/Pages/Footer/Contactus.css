@@ -1,3 +1,10 @@
+
+.backg{
+  background-image: url("https://c.pxhere.com/images/8a/7f/65fbd5583a70d600f409b62eca79-1611896.jpg!d");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cont {
     display: flex;
     justify-content: center;

@@ -1,3 +1,14 @@
+.faq-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 15px;
+  line-height: 1.7;
+  font-family: 'Arial', sans-serif;
+  margin-top: 70px;
+}
+
 .faq-page-container {
     background-color: #f4f4f9;
     padding: 40px 20px;

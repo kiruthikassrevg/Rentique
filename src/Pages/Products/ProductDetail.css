@@ -93,6 +93,7 @@
 .sizes {
     display: flex;
     gap: 10px;
+    color: #000;
 }
 
 .size-button {
@@ -102,11 +103,12 @@
     background-color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    color: #000;
 }
 
 .size-button.selected {
     background-color: #7b6868;
-    color: #fff;
+    color: #121111;
 }
 
 .check-size button {
@@ -194,6 +196,7 @@
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
+    color: #000;
 }
 
 .close-button {

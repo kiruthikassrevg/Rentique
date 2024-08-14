@@ -29,20 +29,9 @@ const Menproducts = [
     'https://dhb8p39s5y2g5.cloudfront.net/rib/1709110530901_FLYSC043-3_4.jpg'
     ],
 },
+
 {
     id: 3,
-    name: 'Formal shirt',
-    price: 600,
-    description: 'Men Black Spread Collar Solid Regular Fit Lyocell Formal Shirt',
-    images: [
-    'https://static.thcdn.com/images/large/webp//productimg/1600/1600/15406829-1515154330743037.jpg',
-    'https://static.thcdn.com/images/large/webp//productimg/1600/1600/15406829-1045154330863958.jpg',
-    'https://static.thcdn.com/images/large/webp//productimg/1600/1600/15406829-2005154330812058.jpg',
-    'https://static.thcdn.com/images/large/webp//productimg/1600/1600/15406829-1665154330835287.jpg'
-    ],
-},
-{
-    id: 4,
     name: 'White Sherwani',
     price: 1100,
     description: 'Heavy embroidered sherwani with metal buttons, paired with gold trousers. See size chart for length and fit.',
@@ -54,8 +43,20 @@ const Menproducts = [
     ],
 },
 {
+  id: 4,
+  name: 'Grey blazer',
+  price: 1600,
+  description: 'Grey blazer with notch lapels and two buttons.',
+  images: [
+  'https://dhb8p39s5y2g5.cloudfront.net/rib/1609243129069_FRES11217_1.jpg',
+  'https://dhb8p39s5y2g5.cloudfront.net/rib/1609243130370_FRES11217_4.jpg',
+  'https://dhb8p39s5y2g5.cloudfront.net/rib/1609243130832_FRES11217_5.jpg',
+  'https://dhb8p39s5y2g5.cloudfront.net/rib/1609243131362_FRES11217_6.jpg'
+  ],
+},
+{
     id: 5,
-    name: 'Beige And Brown Indo Western',
+    name: 'Brown Indo Western',
     price: 6200,
     description: 'Beige indo western with graphite brown churidar.The accessories added in the image are not part of the product.',
     images: [

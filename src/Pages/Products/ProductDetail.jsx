@@ -7,7 +7,7 @@ import './ProductDetail.css';
 const products = [
     {
         id: 1,
-        name: 'Beige Stonework Net Gown',
+        name: 'Stonework Net Gown',
         price: 1200,
         description: 'Beige Readymade Gown in Net fabric. The Gown is embellished with Stonework embroidery.The Beige Gown has a round neck',
         images: [
@@ -19,7 +19,7 @@ const products = [
 },
 {
     id: 2,
-    name: 'Sea Green Readymade Anarkali Suit',
+    name: 'Sea Green Anarkali Suit',
     price: 7600,
     description: ' Sea Green Anarkali Suit in Semi Crepe fabric.The Anarkali Suit is embellished with Zariwork embroidery.Accompanied with a dupatta',
     images: [
@@ -55,7 +55,7 @@ const products = [
 },
 {
     id: 5,
-    name: 'Pink Threadwork Georgette Saree',
+    name: 'Georgette Saree',
     price: 1200,
     description: 'This pink Georgette saree features threadwork embroidery, an unstitched blouse, and the Rentique promise of premium quality.',
     images: [
@@ -67,7 +67,7 @@ const products = [
 },
 {
     id: 6,
-    name: 'Red Printed Semi Crepe Readymade Sharara Suit',
+    name: 'Red Sharara Suit',
     price: 4500,
     description: 'Red Sharara Suit in Semi Crepe fabric.The Sharara Suit is embellished with Printed embroidery.Accompanied with a bottom and dupatta',
     images: [
@@ -116,6 +116,7 @@ const ProductDetailWomen = ({ onAddToCart }) => {
     const [rentalDays, setRentalDays] = useState(4);
     const [isSizeChartOpen, setIsSizeChartOpen] = useState(false);
     const [validationMessage, setValidationMessage] = useState('');
+    const [showNotification, setShowNotification] = useState(false);
   
     useEffect(() => {
       if (startDate && rentalDays) {
@@ -178,7 +179,8 @@ const ProductDetailWomen = ({ onAddToCart }) => {
         };
   
         onAddToCart(item);
-        navigate('/cart'); // Navigate to the cart page
+        setShowNotification(true);  // Show the pop-up notification
+        setTimeout(() => setShowNotification(false), 3000); // Hide after 3 seconds // Navigate to the cart page
       }
     };
   

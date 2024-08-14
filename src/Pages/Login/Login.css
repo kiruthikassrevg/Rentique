@@ -80,7 +80,7 @@ form.sign-in-form {
 
 .input-field .icon {
   font-size: 1.5rem;
-  color: #acacac; /* Grey color for the icon */
+  color: #080808; /* Grey color for the icon */
   margin-right: 10px;
 }
 
@@ -125,7 +125,7 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-  color:#020202b0;
+  color:#725bf5b0;
   border-color:#000000b0;
 }
 
@@ -136,7 +136,7 @@ form.sign-in-form {
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #fff;
+  color: #e8e0e0;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -217,7 +217,7 @@ form.sign-in-form {
 .btn.transparent {
   margin: 0;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid #ece4e4;
   width: 130px;
   height: 41px;
   font-weight: 600;

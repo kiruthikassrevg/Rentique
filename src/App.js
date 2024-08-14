@@ -34,6 +34,14 @@ import Exclusives from './Pages/Exclusives/Exclusives';
 import SliderExclusives from './Pages/Exclusives/SliderExclusives';
 import ProductDetailExclusives from './Pages/Products/ProductDetailExclusives';
 
+import AdminDashboard from './Pages/Admin/AdminDashboard';
+import AdminWomenProducts from './Pages/Admin/AdminWomenProducts';
+import AdminMenProducts from './Pages/Admin/AdminMenProducts';
+import AdminBridesmaidProducts from './Pages/Admin/AdminBridesmaidProducts';
+import AdminGroomsmenProducts from './Pages/Admin/AdminGroomsmenProducts';
+import AdminExclusivesProducts from './Pages/Admin/AdminExclusivesProducts';
+
+
 
 const AppContent = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -79,8 +87,16 @@ const AppContent = () => {
             setUsername(location.state.username);
         }
     }, [location.state]);
+    const showNavbarAndFooter = ![
+        "/admin/dashboard",
+        "/admin/men",
+        "/admin/women",
+        "/admin/bridesmaid",
+        "/admin/groomsmen",
+        "/admin/exclusives"
+    ].includes(location.pathname);
 
-    const showNavbarAndFooter=!["/login"].includes(location.pathname);
+    //const showNavbarAndFooter=!["/login"].includes(location.pathname);
     
 
 
@@ -188,29 +204,35 @@ const AppContent = () => {
                 <Route path="/ReturnPolicy" exact element={<ReturnPolicy/>}></Route>
 
                 <Route path="/Page" exact element={<Page/>}></Route>
-                <Route path="/product/:id" element={<ProductDetail onAddToCart={handleAddToCart} />} />
-                <Route path="/Menproducts/:id" element={<MenProductdetail onAddToCart={handleAddToCart} />} />
+                <Route path="/womenproduct/:id" element={<ProductDetail onAddToCart={handleAddToCart} />} />
+                <Route path="/Menproduct/:id" element={<MenProductdetail onAddToCart={handleAddToCart} />} />
                 <Route path="/cart" element={<Cart cartItems={cartItems} onRemoveItem={handleRemoveItem} />} />
                 <Route path="/payment" element={<Payment/>}/>
 
-
+                 {/* Admin Routes */}
+                <Route path="/admin/dashboard" element={<AdminDashboard />} />
+                <Route path="/admin/men" element={<AdminDashboard><AdminMenProducts /></AdminDashboard>} />
+                <Route path="/admin/women" element={<AdminDashboard><AdminWomenProducts /></AdminDashboard>} />
+                <Route path="/admin/bridesmaid" element={<AdminDashboard><AdminBridesmaidProducts /></AdminDashboard>} />
+                <Route path="/admin/groomsmen" element={<AdminDashboard><AdminGroomsmenProducts /></AdminDashboard>} />
+                <Route path="/admin/exclusives" element={<AdminDashboard><AdminExclusivesProducts /></AdminDashboard>} />
                 
-
             </Routes>
             {showNavbarAndFooter && <Footer />}
         </>
     );
-};
+}
 
-const App = () => {
-    return (
-        <Router>
-            <AppContent />
-        </Router>
-    );
-};
+const App = () => (
+    <Router>
+        <AppContent />
+    </Router>
+)
 
 export default App;
+
+
+                
 
 
 //import React, { useState, useEffect } from 'react';

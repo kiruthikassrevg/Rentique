@@ -2,26 +2,32 @@
 bodyies {
   font-family: Arial, sans-serif;
 }
-.ima{
-  background-image: url("https://welpmagazine.com/wp-content/uploads/2020/10/158.jpeg");
-
+  
+.backkk{
+  background-image: url("https://c.pxhere.com/images/8a/7f/65fbd5583a70d600f409b62eca79-1611896.jpg!d");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .sell-with-us-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #e9dbbe;
+  background-color: #edece8;
   border-radius: 10px;
   background-repeat: no-repeat;
   max-height: max-content;
 }
 
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: black;
+  background: linear-gradient(90deg, #1f0e0a, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -33,7 +39,7 @@ p {
 .sell-with-us-form {
   display: flex;
   flex-direction: column; /* Keeps all fields in a column layout for consistent margin */
-  gap: 20px;
+  gap: 10px;
   margin: 0; /* Ensure no additional margin on form */
   padding: 0;
   color: black; /* Ensure no additional padding on form */
@@ -81,7 +87,7 @@ p {
 .sell-with-us-checkbox-group {
   display: flex;
   flex-direction: column; /* Stack items vertically */
-  gap: 5px; /* Space between items */
+  gap: 10px; /* Space between items */
 }
 
 .sell-with-us-radio-group label,
@@ -92,7 +98,7 @@ p {
 
 .sell-with-us-radio-group input,
 .sell-with-us-checkbox-group input {
-  margin-right: 10px;
+  margin-left: 15px;
 }
 
 /* Styles for submit button */

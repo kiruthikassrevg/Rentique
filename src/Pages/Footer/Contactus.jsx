@@ -36,6 +36,8 @@ const handleSubmit = async (e) => {
 };
 
 return (
+    <div className="backg">
+        
     <div className="cont">
     <div className="contact-page">
         <h1>Contact Us</h1>
@@ -77,6 +79,7 @@ return (
         </button>
         </form>
         {submissionStatus && <p>{submissionStatus}</p>}
+    </div>
     </div>
     </div>
 );

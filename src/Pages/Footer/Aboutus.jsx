@@ -25,7 +25,8 @@ return (
             <h1>ABOUT US</h1>
             <h5>RENTIQUE FASHION RENTAL CLOTHING</h5>
             <p>
-            At Rentique, we believe that every special occasion deserves a unique and unforgettable look. Whether it's a wedding, gala, prom, or any other milestone event, our curated collection of high-quality rental clothing allows you to express your personal style without the commitment of a purchase. We offer a diverse range of elegant dresses, sophisticated suits, and stylish accessories, ensuring you find the perfect outfit for your big day. Our mission is to make luxury fashion accessible and sustainable, providing a seamless rental experience that lets you shine. Embrace the freedom to explore new styles and make your special occasions even more memorable with Rentique.
+            At Rentique, we believe that every special occasion deserves a unique and unforgettable look.
+            Whether it's a wedding, gala, prom, or any other milestone event, our curated collection of high-quality rental clothing allows you to express your personal style without the commitment of a purchase. We offer a diverse range of elegant dresses, sophisticated suits, and stylish accessories, ensuring you find the perfect outfit for your big day. Our mission is to make luxury fashion accessible and sustainable, providing a seamless rental experience that lets you shine. Embrace the freedom to explore new styles and make your special occasions even more memorable with Rentique.
             </p>
         </div>
         </div>

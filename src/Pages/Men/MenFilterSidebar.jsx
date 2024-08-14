@@ -1,6 +1,4 @@
 
-
-
 import React from 'react';
 import '../../Pages/Styles/FilterSidebar.css';
 
@@ -19,7 +17,7 @@ const FilterSidebar = ({ filters, onFilterChange, isOpen, onClose }) => {
     <div className={`filter-sidebar ${isOpen ? 'open' : ''}`}>
       <button className="close-btn" onClick={onClose}>×</button>
       <h2>By Category</h2>
-      {['Saree', 'Kurti', 'Lehenga', 'Salwaar', 'Choli', 'Dupatta', 'Anarkali', 'Gown'].map(category => (
+      {['Sherwani', 'Suit', 'Shirts', 'Western', 'Jawahar cut', 'Sherwani', 'Jacket'].map(category => (
         <label key={category}>
           <input 
             type="checkbox" 

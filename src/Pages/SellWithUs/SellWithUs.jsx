@@ -60,8 +60,8 @@ const SellWithUs = () => {
   };
 
   return (
-    <div className="backkk" 
-    >
+    <div className='backkk'>
+    
     <div className="sell-with-us-container">
         <h1>SELL WITH US</h1>
         <p>You can now cash in on your wardrobe by listing your designer wear on our website to sell, we charge a 20% commission on all sales.</p>
@@ -101,37 +101,39 @@ const SellWithUs = () => {
                 <textarea name="productDescription" value={formData.productDescription} onChange={handleChange} required />
               </div>
             </div>
+            <div className="form-row">
+
             <div className="sell-with-us-form-group sell-with-us-size">
               <label>Outfit Size*</label>
               <div className="sell-with-us-radio-group">
-                <label><input type="radio" name="outfitSize" value="XS" onChange={handleChange} required /> XS</label>
-                <label><input type="radio" name="outfitSize" value="S" onChange={handleChange} /> S</label>
-                <label><input type="radio" name="outfitSize" value="M" onChange={handleChange} /> M</label>
-                <label><input type="radio" name="outfitSize" value="L" onChange={handleChange} /> L</label>
-                <label><input type="radio" name="outfitSize" value="XL" onChange={handleChange} /> XL</label>
+                <label><input type="radio" name="outfitSize" value="XS" onChange={handleChange} required /> XS  
+                <input type="radio" name="outfitSize" value="S" onChange={handleChange} /> S
+                <input type="radio" name="outfitSize" value="M" onChange={handleChange} /> M
+                <input type="radio" name="outfitSize" value="L" onChange={handleChange} /> L
+                <input type="radio" name="outfitSize" value="XL" onChange={handleChange} /> XL</label>
               </div>
             </div>
-            <div className="form-row">
               <div className="sell-with-us-form-group sell-with-us-margin">
                 <label>Margin in the Outfit</label>
                 <input type="text" name="margin" value={formData.margin} onChange={handleChange} />
               </div>
+
               <div className="sell-with-us-form-group sell-with-us-height">
                 <label>Your Height*</label>
                 <input type="text" name="height" value={formData.height} onChange={handleChange} required />
               </div>
-            </div>
-            <div className="form-row">
+              <div className="form-row">
+            
               <div className="sell-with-us-form-group sell-with-us-upload-front">
                 <label>Upload Front Pictures of the Outfit*</label>
                 <input type="file" name="frontPictures" className="sell-with-us-file-input" onChange={handleChange} multiple required />
               </div>
+              
               <div className="sell-with-us-form-group sell-with-us-upload-label">
                 <label>Upload Label Picture Inside the Outfit*</label>
                 <input type="file" name="labelPicture" className="sell-with-us-file-input" onChange={handleChange} required />
               </div>
             </div>
-            <div className="form-row">
               <div className="sell-with-us-form-group sell-with-us-proof">
                 <label>Proof of Purchase*</label>
                 <div className="sell-with-us-radio-group">
@@ -174,6 +176,8 @@ const SellWithUs = () => {
                 <input type="number" name="purchaseYear" min="1900" max={new Date().getFullYear()} value={formData.purchaseYear} onChange={handleChange} required />
               </div>
             </div>
+            <div className="form-row">
+
             <div className="sell-with-us-form-group sell-with-us-offer-price">
             <label>Your Offer Price (in rupees)*</label>
             <input type="text" name="offerPrice" value={formData.offerPrice} onChange={handleChange} required />
@@ -182,8 +186,9 @@ const SellWithUs = () => {
             <div className="sell-with-us-form-group sell-with-us-rent">
             <label>Are you open to putting your outfit up for rent?*</label>
             <div className="sell-with-us-radio-group">
-                <label><input type="radio" name="rentOption" value="Yes" onChange={handleChange} required /> Yes</label>
-                <label><input type="radio" name="rentOption" value="No" onChange={handleChange} /> No</label>
+                <label><input type="radio" name="rentOption" value="Yes" onChange={handleChange} required /> Yes  
+                <input type="radio" name="rentOption" value="No" onChange={handleChange} /> No</label>
+            </div>
             </div>
             </div>
             <button type="submit" className="sell-with-us-submit-button">Submit</button>
@@ -191,6 +196,7 @@ const SellWithUs = () => {
         )}
     </div>
     </div>
+    
 );
 };
 

@@ -43,6 +43,8 @@ const handleClick = (index) => {
 
 return (
     <div>
+            <div className="faq-container">
+
     
     <div className="faq-page-container">
         <div className="faq-container">
@@ -67,6 +69,7 @@ return (
         </div>
     </div>
     
+    </div>
     </div>
 );
 };
